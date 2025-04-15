@@ -1,0 +1,95 @@
+[
+    {
+      "municipio": "Manaus",
+      "latitude": -3.117034,
+      "longitude": -60.025780,
+      "possui_aeroporto": true,
+      "aeroporto": {
+        "nome": "Aeroporto Internacional Eduardo Gomes",
+        "codigo_iata": "MAO"
+      },
+      "vizinhos": [
+        {
+          "municipio": "Iranduba",
+          "distancia_km": 27
+        },
+        {
+          "municipio": "Manacapuru",
+          "distancia_km": 93
+        },
+        {
+          "municipio": "Itacoatiara",
+          "distancia_km": 270
+        }
+      ]
+    },
+    {
+      "municipio": "Iranduba",
+      "latitude": -3.285000,
+      "longitude": -60.185833,
+      "possui_aeroporto": false,
+      "vizinhos": [
+        {
+          "municipio": "Manaus",
+          "distancia_km": 27
+        },
+        {
+          "municipio": "Manacapuru",
+          "distancia_km": 40
+        }
+      ]
+    },
+    {
+      "municipio": "Manacapuru",
+      "latitude": -3.304167,
+      "longitude": -60.617500,
+      "possui_aeroporto": false,
+      "vizinhos": [
+        {
+          "municipio": "Iranduba",
+          "distancia_km": 40
+        },
+        {
+          "municipio": "Manaus",
+          "distancia_km": 93
+        },
+        {
+          "municipio": "Novo Airão",
+          "distancia_km": 115
+        }
+      ]
+    },
+    {
+      "municipio": "Itacoatiara",
+      "latitude": -3.133000,
+      "longitude": -58.450000,
+      "possui_aeroporto": true,
+      "aeroporto": {
+        "nome": "Aeroporto de Itacoatiara",
+        "codigo_iata": "ITA"
+      },
+      "vizinhos": [
+        {
+          "municipio": "Manaus",
+          "distancia_km": 270
+        },
+        {
+          "municipio": "Silves",
+          "distancia_km": 70
+        }
+      ]
+    },
+    {
+      "municipio": "Silves",
+      "latitude": -2.838889,
+      "longitude": -58.209167,
+      "possui_aeroporto": false,
+      "vizinhos": [
+        {
+          "municipio": "Itacoatiara",
+          "distancia_km": 70
+        }
+      ]
+    }
+  ]
+  
