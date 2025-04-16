@@ -1,1038 +1,565 @@
-[
-    {
-      "municipio": "Alvarães",
-      "latitude": -3.117034,
-      "longitude": -60.02578,
-      "possui_aeroporto": true,
+{
+  "municipios": {
+    "Alvarães": {
+      "coordenadas": {"lat": 0.0, "lon": 0.0},
+      "vizinhos": {
+        "Tefé": {"distancia_km": 40, "tipo": "fluvial"}
+      }
+    },
+    "Amaturá": {
+      "coordenadas": {"lat": -3.3667, "lon": -68.2},
+      "vizinhos": {
+        "São Paulo de Olivença": {"distancia_km": 60, "tipo": "fluvial"},
+        "Santo Antônio do Içá": {"distancia_km": 90, "tipo": "fluvial"}
+      }
+    },
+    "Anamã": {
+      "coordenadas": {"lat": -3.5833, "lon": -61.4},
+      "vizinhos": {
+        "Manacapuru": {"distancia_km": 85, "tipo": "fluvial"},
+        "Anori": {"distancia_km": 60, "tipo": "fluvial"},
+        "Beruri": {"distancia_km": 70, "tipo": "fluvial"},
+        "Caapiranga": {"distancia_km": 40, "tipo": "fluvial"}
+      }
+    },
+    "Anori": {
+      "coordenadas": {"lat": -3.75, "lon": -61.65},
+      "vizinhos": {
+        "Anamã": {"distancia_km": 60, "tipo": "fluvial"},
+        "Coari": {"distancia_km": 130, "tipo": "fluvial"},
+        "Codajás": {"distancia_km": 90, "tipo": "fluvial"}
+      }
+    },
+    "Apuí": {
+      "coordenadas": {"lat": -7.2, "lon": -59.9},
+      "vizinhos": {
+        "Novo Aripuanã": {"distancia_km": 200, "tipo": "rodovia"},
+        "Borba": {"distancia_km": 150, "tipo": "fluvial"},
+        "Maués": {"distancia_km": 200, "tipo": "fluvial"}
+      }
+    },
+    "Atalaia do Norte": {
+      "coordenadas": {"lat": -4.3667, "lon": -70.1833},
+      "vizinhos": {
+        "Benjamin Constant": {"distancia_km": 80, "tipo": "fluvial"},
+        "Jutaí": {"distancia_km": 150, "tipo": "fluvial"}
+      }
+    },
+    "Autazes": {
+      "coordenadas": {"lat": -3.5833, "lon": -59.1333},
+      "vizinhos": {
+        "Itacoatiara": {"distancia_km": 110, "tipo": "rodovia"},
+        "Careiro": {"distancia_km": 80, "tipo": "fluvial"}
+      }
+    },
+    "Barcelos": {
+      "coordenadas": {"lat": -0.9667, "lon": -62.9167},
       "aeroporto": {
-        "nome": "Aeroporto Internacional Eduardo Gomes",
-        "codigo_iata": "MAO"
+        "nome": "Aeroporto de Barcelos",
+        "iata": "BAZ"
       },
-      "vizinhos": [
-        {
-          "municipio": "Iranduba",
-          "distancia_km": 27
-        },
-        {
-          "municipio": "Manacapuru",
-          "distancia_km": 93
-        },
-        {
-          "municipio": "Itacoatiara",
-          "distancia_km": 270
-        }
-      ]
+      "vizinhos": {
+        "Novo Airão": {"distancia_km": 250, "tipo": "fluvial"},
+        "Santa Isabel do Rio Negro": {"distancia_km": 180, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Amaturá",
-      "latitude": -3.363333,
-      "longitude": -68.200556,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "São Paulo de Olivença",
-          "distancia_km": 85
-        },
-        {
-          "municipio": "Santo Antônio do Içá",
-          "distancia_km": 120
-        }
-      ]
+    "Barreirinha": {
+      "coordenadas": {"lat": -2.8, "lon": -57.0667},
+      "vizinhos": {
+        "Maués": {"distancia_km": 120, "tipo": "fluvial"},
+        "Parintins": {"distancia_km": 80, "tipo": "fluvial"},
+        "Boa Vista do Ramos": {"distancia_km": 50, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Anamã",
-      "latitude": -3.583333,
-      "longitude": -61.4,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Anori",
-          "distancia_km": 35
-        },
-        {
-          "municipio": "Beruri",
-          "distancia_km": 80
-        }
-      ]
+    "Benjamin Constant": {
+      "coordenadas": {"lat": -4.3831, "lon": -70.0319},
+      "aeroporto": {
+        "nome": "Aeroporto de Benjamin Constant",
+        "iata": "none"
+      },
+      "vizinhos": {
+        "Tabatinga": {"distancia_km": 12, "tipo": "rodovia"},
+        "Atalaia do Norte": {"distancia_km": 80, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Anori",
-      "latitude": -3.772222,
-      "longitude": -61.644167,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Anamã",
-          "distancia_km": 35
-        },
-        {
-          "municipio": "Beruri",
-          "distancia_km": 45
-        }
-      ]
+    "Beruri": {
+      "coordenadas": {"lat": -3.9, "lon": -61.3667},
+      "vizinhos": {
+        "Manacapuru": {"distancia_km": 100, "tipo": "fluvial"},
+        "Anamã": {"distancia_km": 70, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Apuí",
-      "latitude": -7.194722,
-      "longitude": -59.896944,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Novo Aripuanã",
-          "distancia_km": 180
-        },
-        {
-          "municipio": "Manicoré",
-          "distancia_km": 220
-        }
-      ]
+    "Boa Vista do Ramos": {
+      "coordenadas": {"lat": -2.9667, "lon": -57.5833},
+      "vizinhos": {
+        "Barreirinha": {"distancia_km": 50, "tipo": "fluvial"},
+        "Maués": {"distancia_km": 70, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Atalaia do Norte",
-      "latitude": -4.371667,
-      "longitude": -70.191667,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Benjamin Constant",
-          "distancia_km": 42
-        },
-        {
-          "municipio": "Tabatinga",
-          "distancia_km": 88
-        }
-      ]
+    "Boca do Acre": {
+      "coordenadas": {"lat": -8.75, "lon": -67.3833},
+      "aeroporto": {
+        "nome": "Aeroporto de Boca do Acre",
+        "iata": "none"
+      },
+      "vizinhos": {
+        "Lábrea": {"distancia_km": 320, "tipo": "rodovia"},
+        "Pauini": {"distancia_km": 180, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Autazes",
-      "latitude": -3.579722,
-      "longitude": -59.130556,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Careiro",
-          "distancia_km": 75
-        },
-        {
-          "municipio": "Nova Olinda do Norte",
-          "distancia_km": 95
-        }
-      ]
+    "Borba": {
+      "coordenadas": {"lat": -4.3833, "lon": -59.5833},
+      "aeroporto": {
+        "nome": "Aeroporto de Borba",
+        "iata": "none"
+      },
+      "vizinhos": {
+        "Apuí": {"distancia_km": 150, "tipo": "fluvial"},
+        "Novo Aripuanã": {"distancia_km": 120, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Barcelos",
-      "latitude": -0.975,
-      "longitude": -62.923889,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Santa Isabel do Rio Negro",
-          "distancia_km": 320
-        },
-        {
-          "municipio": "Novo Airão",
-          "distancia_km": 400
-        }
-      ]
+    "Caapiranga": {
+      "coordenadas": {"lat": -3.3333, "lon": -61.2167},
+      "vizinhos": {
+        "Manacapuru": {"distancia_km": 60, "tipo": "fluvial"},
+        "Anamã": {"distancia_km": 40, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Barreirinha",
-      "latitude": -2.793889,
-      "longitude": -57.067778,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Parintins",
-          "distancia_km": 75
-        },
-        {
-          "municipio": "Boa Vista do Ramos",
-          "distancia_km": 45
-        }
-      ]
+    "Canutama": {
+      "coordenadas": {"lat": -6.5333, "lon": -64.3833},
+      "vizinhos": {
+        "Lábrea": {"distancia_km": 180, "tipo": "fluvial"},
+        "Humaitá": {"distancia_km": 150, "tipo": "rodovia"}
+      }
     },
-    {
-      "municipio": "Benjamin Constant",
-      "latitude": -4.383056,
-      "longitude": -70.033889,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Atalaia do Norte",
-          "distancia_km": 42
-        },
-        {
-          "municipio": "Tabatinga",
-          "distancia_km": 46
-        }
-      ]
+    "Carauari": {
+      "coordenadas": {"lat": -4.8833, "lon": -66.9},
+      "aeroporto": {
+        "nome": "Aeroporto de Carauari",
+        "iata": "CAF"
+      },
+      "vizinhos": {
+        "Jutaí": {"distancia_km": 280, "tipo": "fluvial"},
+        "Tefé": {"distancia_km": 320, "tipo": "fluvial"},
+        "Itamarati": {"distancia_km": 150, "tipo": "fluvial"},
+        "Juruá": {"distancia_km": 200, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Beruri",
-      "latitude": -3.898889,
-      "longitude": -61.361944,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Anamã",
-          "distancia_km": 80
-        },
-        {
-          "municipio": "Anori",
-          "distancia_km": 45
-        }
-      ]
+    "Careiro": {
+      "coordenadas": {"lat": -3.2, "lon": -59.8167},
+      "vizinhos": {
+        "Manaus": {"distancia_km": 35, "tipo": "fluvial"},
+        "Autazes": {"distancia_km": 80, "tipo": "fluvial"},
+        "Careiro da Várzea": {"distancia_km": 10, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Boa Vista do Ramos",
-      "latitude": -2.973889,
-      "longitude": -57.5875,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Barreirinha",
-          "distancia_km": 45
-        },
-        {
-          "municipio": "Parintins",
-          "distancia_km": 30
-        }
-      ]
+    "Careiro da Várzea": {
+      "coordenadas": {"lat": -3.2167, "lon": -59.8333},
+      "vizinhos": {
+        "Manaus": {"distancia_km": 25, "tipo": "fluvial"},
+        "Careiro": {"distancia_km": 10, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Boca do Acre",
-      "latitude": -8.752222,
-      "longitude": -67.397778,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Pauini",
-          "distancia_km": 180
-        },
-        {
-          "municipio": "Lábrea",
-          "distancia_km": 220
-        }
-      ]
-    },
-    {
-      "municipio": "Borba",
-      "latitude": -4.391389,
-      "longitude": -59.588611,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Nova Olinda do Norte",
-          "distancia_km": 85
-        },
-        {
-          "municipio": "Autazes",
-          "distancia_km": 120
-        }
-      ]
-    },
-    {
-      "municipio": "Caapiranga",
-      "latitude": -3.328611,
-      "longitude": -61.213611,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Manacapuru",
-          "distancia_km": 65
-        },
-        {
-          "municipio": "Anamã",
-          "distancia_km": 40
-        }
-      ]
-    },
-    {
-      "municipio": "Canutama",
-      "latitude": -6.533889,
-      "longitude": -64.383056,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Lábrea",
-          "distancia_km": 150
-        },
-        {
-          "municipio": "Humaitá",
-          "distancia_km": 200
-        }
-      ]
-    },
-    {
-      "municipio": "Carauari",
-      "latitude": -4.882778,
-      "longitude": -66.895833,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Juruá",
-          "distancia_km": 180
-        },
-        {
-          "municipio": "Tefé",
-          "distancia_km": 320
-        }
-      ]
-    },
-    {
-      "municipio": "Careiro",
-      "latitude": -3.821944,
-      "longitude": -60.361944,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Autazes",
-          "distancia_km": 75
-        },
-        {
-          "municipio": "Manacapuru",
-          "distancia_km": 85
-        }
-      ]
-    },
-    {
-      "municipio": "Careiro da Várzea",
-      "latitude": -3.197222,
-      "longitude": -59.825,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Iranduba",
-          "distancia_km": 25
-        },
-        {
-          "municipio": "Manaus",
-          "distancia_km": 35
-        }
-      ]
-    },
-    {
-      "municipio": "Coari",
-      "latitude": -4.085,
-      "longitude": -63.141389,
-      "possui_aeroporto": true,
+    "Coari": {
+      "coordenadas": {"lat": -4.085, "lon": -63.1414},
       "aeroporto": {
         "nome": "Aeroporto de Coari",
-        "codigo_iata": "CIZ"
+        "iata": "CIZ"
       },
-      "vizinhos": [
-        {
-          "municipio": "Tefé",
-          "distancia_km": 225
-        },
-        {
-          "municipio": "Anori",
-          "distancia_km": 180
-        }
-      ]
+      "vizinhos": {
+        "Tefé": {"distancia_km": 225, "tipo": "fluvial"},
+        "Codajás": {"distancia_km": 180, "tipo": "fluvial"},
+        "Anori": {"distancia_km": 130, "tipo": "fluvial"},
+        "Tapauá": {"distancia_km": 250, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Codajás",
-      "latitude": -3.836667,
-      "longitude": -62.056944,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Coari",
-          "distancia_km": 150
-        },
-        {
-          "municipio": "Anori",
-          "distancia_km": 95
-        }
-      ]
+    "Codajás": {
+      "coordenadas": {"lat": -3.8333, "lon": -62.05},
+      "aeroporto": {
+        "nome": "Aeroporto de Codajás",
+        "iata": "none"
+      },
+      "vizinhos": {
+        "Coari": {"distancia_km": 180, "tipo": "fluvial"},
+        "Anori": {"distancia_km": 90, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Eirunepé",
-      "latitude": -6.66,
-      "longitude": -69.873889,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Envira",
-          "distancia_km": 120
-        },
-        {
-          "municipio": "Ipixuna",
-          "distancia_km": 85
-        }
-      ]
+    "Eirunepé": {
+      "coordenadas": {"lat": -6.66, "lon": -69.8739},
+      "aeroporto": {
+        "nome": "Aeroporto de Eirunepé",
+        "iata": "ERN"
+      },
+      "vizinhos": {
+        "Envira": {"distancia_km": 85, "tipo": "fluvial"},
+        "Ipixuna": {"distancia_km": 120, "tipo": "fluvial"},
+        "Juruá": {"distancia_km": 200, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Envira",
-      "latitude": -7.438889,
-      "longitude": -70.028889,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Eirunepé",
-          "distancia_km": 120
-        },
-        {
-          "municipio": "Guajará",
-          "distancia_km": 95
-        }
-      ]
+    "Envira": {
+      "coordenadas": {"lat": -7.3, "lon": -70.2167},
+      "vizinhos": {
+        "Eirunepé": {"distancia_km": 85, "tipo": "fluvial"},
+        "Guajará": {"distancia_km": 120, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Fonte Boa",
-      "latitude": -2.513889,
-      "longitude": -66.091667,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Juruá",
-          "distancia_km": 150
-        },
-        {
-          "municipio": "Tonantins",
-          "distancia_km": 180
-        }
-      ]
+    "Fonte Boa": {
+      "coordenadas": {"lat": -2.5167, "lon": -66.1},
+      "aeroporto": {
+        "nome": "Aeroporto de Fonte Boa",
+        "iata": "none"
+      },
+      "vizinhos": {
+        "Tonantins": {"distancia_km": 180, "tipo": "fluvial"},
+        "Jutaí": {"distancia_km": 220, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Guajará",
-      "latitude": -7.546944,
-      "longitude": -72.583889,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Envira",
-          "distancia_km": 95
-        },
-        {
-          "municipio": "Ipixuna",
-          "distancia_km": 110
-        }
-      ]
+    "Guajará": {
+      "coordenadas": {"lat": -7.5333, "lon": -72.5833},
+      "vizinhos": {
+        "Envira": {"distancia_km": 120, "tipo": "fluvial"},
+        "Ipixuna": {"distancia_km": 100, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Humaitá",
-      "latitude": -7.511667,
-      "longitude": -63.0325,
-      "possui_aeroporto": true,
+    "Humaitá": {
+      "coordenadas": {"lat": -7.5, "lon": -63.0333},
       "aeroporto": {
         "nome": "Aeroporto de Humaitá",
-        "codigo_iata": "HUW"
+        "iata": "HUW"
       },
-      "vizinhos": [
-        {
-          "municipio": "Manicoré",
-          "distancia_km": 180
-        },
-        {
-          "municipio": "Canutama",
-          "distancia_km": 200
-        }
-      ]
+      "vizinhos": {
+        "Manicoré": {"distancia_km": 220, "tipo": "fluvial"},
+        "Canutama": {"distancia_km": 150, "tipo": "rodovia"}
+      }
     },
-    {
-      "municipio": "Ipixuna",
-      "latitude": -7.048889,
-      "longitude": -71.693889,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Eirunepé",
-          "distancia_km": 85
-        },
-        {
-          "municipio": "Guajará",
-          "distancia_km": 110
-        }
-      ]
+    "Ipixuna": {
+      "coordenadas": {"lat": -7.05, "lon": -71.7},
+      "vizinhos": {
+        "Guajará": {"distancia_km": 100, "tipo": "fluvial"},
+        "Eirunepé": {"distancia_km": 120, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Iranduba",
-      "latitude": -3.285,
-      "longitude": -60.186111,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Manaus",
-          "distancia_km": 25
-        },
-        {
-          "municipio": "Alvarães",
-          "distancia_km": 27
-        }
-      ]
+    "Iranduba": {
+      "coordenadas": {"lat": -3.285, "lon": -60.1861},
+      "vizinhos": {
+        "Manaus": {"distancia_km": 25, "tipo": "rodovia"},
+        "Manacapuru": {"distancia_km": 70, "tipo": "rodovia"},
+        "Novo Airão": {"distancia_km": 90, "tipo": "fluvial"},
+        "Novo Remanso": {"distancia_km": 50, "tipo": "rodovia"}
+      }
     },
-    {
-      "municipio": "Itacoatiara",
-      "latitude": -3.143056,
-      "longitude": -58.444167,
-      "possui_aeroporto": true,
+    "Itacoatiara": {
+      "coordenadas": {"lat": -3.1386, "lon": -58.4442},
       "aeroporto": {
         "nome": "Aeroporto de Itacoatiara",
-        "codigo_iata": "ITA"
+        "iata": "ITA"
       },
-      "vizinhos": [
-        {
-          "municipio": "Alvarães",
-          "distancia_km": 270
-        },
-        {
-          "municipio": "Urucurituba",
-          "distancia_km": 45
-        }
-      ]
+      "vizinhos": {
+        "Silves": {"distancia_km": 90, "tipo": "fluvial"},
+        "Autazes": {"distancia_km": 110, "tipo": "rodovia"},
+        "Urucurituba": {"distancia_km": 60, "tipo": "fluvial"},
+        "Rio Preto da Eva": {"distancia_km": 90, "tipo": "rodovia"}
+      }
     },
-    {
-      "municipio": "Itamarati",
-      "latitude": -6.425,
-      "longitude": -68.258889,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Carauari",
-          "distancia_km": 220
-        },
-        {
-          "municipio": "Eirunepé",
-          "distancia_km": 280
-        }
-      ]
+    "Itamarati": {
+      "coordenadas": {"lat": -6.4333, "lon": -68.2667},
+      "vizinhos": {
+        "Carauari": {"distancia_km": 150, "tipo": "fluvial"},
+        "Juruá": {"distancia_km": 180, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Itapiranga",
-      "latitude": -2.74,
-      "longitude": -58.028889,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "São Sebastião do Uatumã",
-          "distancia_km": 90
-        },
-        {
-          "municipio": "Silves",
-          "distancia_km": 65
-        }
-      ]
+    "Itapiranga": {
+      "coordenadas": {"lat": -2.75, "lon": -58.0333},
+      "vizinhos": {
+        "São Sebastião do Uatumã": {"distancia_km": 70, "tipo": "fluvial"},
+        "Silves": {"distancia_km": 50, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Japurá",
-      "latitude": -1.8825,
-      "longitude": -66.985833,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Santa Isabel do Rio Negro",
-          "distancia_km": 350
-        },
-        {
-          "municipio": "Barcelos",
-          "distancia_km": 400
-        }
-      ]
+    "Japurá": {
+      "coordenadas": {"lat": -1.8333, "lon": -66.9833},
+      "vizinhos": {
+        "Maraã": {"distancia_km": 200, "tipo": "fluvial"},
+        "São Gabriel da Cachoeira": {"distancia_km": 300, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Juruá",
-      "latitude": -3.466667,
-      "longitude": -66.066667,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Carauari",
-          "distancia_km": 180
-        },
-        {
-          "municipio": "Fonte Boa",
-          "distancia_km": 150
-        }
-      ]
+    "Juruá": {
+      "coordenadas": {"lat": -3.4667, "lon": -66.0667},
+      "vizinhos": {
+        "Itamarati": {"distancia_km": 180, "tipo": "fluvial"},
+        "Carauari": {"distancia_km": 200, "tipo": "fluvial"},
+        "Eirunepé": {"distancia_km": 200, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Jutaí",
-      "latitude": -2.758889,
-      "longitude": -66.759722,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Fonte Boa",
-          "distancia_km": 220
-        },
-        {
-          "municipio": "Tonantins",
-          "distancia_km": 250
-        }
-      ]
+    "Jutaí": {
+      "coordenadas": {"lat": -2.75, "lon": -66.7667},
+      "vizinhos": {
+        "Fonte Boa": {"distancia_km": 220, "tipo": "fluvial"},
+        "Carauari": {"distancia_km": 280, "tipo": "fluvial"},
+        "Atalaia do Norte": {"distancia_km": 150, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Lábrea",
-      "latitude": -7.258611,
-      "longitude": -64.798056,
-      "possui_aeroporto": true,
+    "Lábrea": {
+      "coordenadas": {"lat": -7.2586, "lon": -64.7986},
       "aeroporto": {
         "nome": "Aeroporto de Lábrea",
-        "codigo_iata": "LBR"
+        "iata": "LBR"
       },
-      "vizinhos": [
-        {
-          "municipio": "Canutama",
-          "distancia_km": 150
-        },
-        {
-          "municipio": "Tapauá",
-          "distancia_km": 180
-        }
-      ]
+      "vizinhos": {
+        "Canutama": {"distancia_km": 180, "tipo": "fluvial"},
+        "Tapauá": {"distancia_km": 220, "tipo": "fluvial"},
+        "Boca do Acre": {"distancia_km": 320, "tipo": "rodovia"},
+        "Pauini": {"distancia_km": 200, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Manacapuru",
-      "latitude": -3.299722,
-      "longitude": -60.620833,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Alvarães",
-          "distancia_km": 93
-        },
-        {
-          "municipio": "Caapiranga",
-          "distancia_km": 65
-        }
-      ]
-    },
-    {
-      "municipio": "Manaquiri",
-      "latitude": -3.440556,
-      "longitude": -60.461389,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Iranduba",
-          "distancia_km": 35
-        },
-        {
-          "municipio": "Manacapuru",
-          "distancia_km": 55
-        }
-      ]
-    },
-    {
-      "municipio": "Manaus",
-      "latitude": -3.119028,
-      "longitude": -60.02175,
-      "possui_aeroporto": true,
+    "Manacapuru": {
+      "coordenadas": {"lat": -3.2996, "lon": -60.6207},
       "aeroporto": {
-        "nome": "Aeroporto Internacional Eduardo Gomes",
-        "codigo_iata": "MAO"
+        "nome": "Aeroporto de Manacapuru",
+        "iata": "none"
       },
-      "vizinhos": [
-        {
-          "municipio": "Iranduba",
-          "distancia_km": 25
-        },
-        {
-          "municipio": "Careiro da Várzea",
-          "distancia_km": 35
-        }
-      ]
+      "vizinhos": {
+        "Iranduba": {"distancia_km": 70, "tipo": "rodovia"},
+        "Novo Remanso": {"distancia_km": 45, "tipo": "rodovia"},
+        "Anamã": {"distancia_km": 85, "tipo": "fluvial"},
+        "Beruri": {"distancia_km": 100, "tipo": "fluvial"},
+        "Caapiranga": {"distancia_km": 60, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Manicoré",
-      "latitude": -5.809722,
-      "longitude": -61.300556,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Humaitá",
-          "distancia_km": 180
-        },
-        {
-          "municipio": "Novo Aripuanã",
-          "distancia_km": 150
-        }
-      ]
+    "Manaquiri": {
+      "coordenadas": {"lat": -3.4408, "lon": -60.4615},
+      "vizinhos": {}
     },
-    {
-      "municipio": "Maraã",
-      "latitude": -1.853056,
-      "longitude": -65.573056,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Japurá",
-          "distancia_km": 120
-        },
-        {
-          "municipio": "Uarini",
-          "distancia_km": 180
-        }
-      ]
-    },
-    {
-      "municipio": "Maués",
-      "latitude": -3.383889,
-      "longitude": -57.718611,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Apuí",
-          "distancia_km": 220
-        },
-        {
-          "municipio": "Barreirinha",
-          "distancia_km": 95
-        }
-      ]
-    },
-    {
-      "municipio": "Nhamundá",
-      "latitude": -2.186111,
-      "longitude": -56.713056,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Urucará",
-          "distancia_km": 85
-        },
-        {
-          "municipio": "Parintins",
-          "distancia_km": 120
-        }
-      ]
-    },
-    {
-      "municipio": "Nova Olinda do Norte",
-      "latitude": -3.891944,
-      "longitude": -59.094167,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Autazes",
-          "distancia_km": 95
-        },
-        {
-          "municipio": "Borba",
-          "distancia_km": 85
-        }
-      ]
-    },
-    {
-      "municipio": "Novo Airão",
-      "latitude": -2.620833,
-      "longitude": -60.943889,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Barcelos",
-          "distancia_km": 400
-        },
-        {
-          "municipio": "Manaus",
-          "distancia_km": 115
-        }
-      ]
-    },
-    {
-      "municipio": "Novo Aripuanã",
-      "latitude": -5.125833,
-      "longitude": -60.380833,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Manicoré",
-          "distancia_km": 150
-        },
-        {
-          "municipio": "Apuí",
-          "distancia_km": 180
-        }
-      ]
-    },
-    {
-      "municipio": "Parintins",
-      "latitude": -2.627778,
-      "longitude": -56.735833,
-      "possui_aeroporto": true,
+    "Manaus": {
+      "coordenadas": {"lat": -3.119, "lon": -60.0217},
       "aeroporto": {
-        "nome": "Aeroporto de Parintins",
-        "codigo_iata": "PIN"
+        "nome": "Eduardo Gomes",
+        "iata": "MAO"
       },
-      "vizinhos": [
-        {
-          "municipio": "Barreirinha",
-          "distancia_km": 75
-        },
-        {
-          "municipio": "Nhamundá",
-          "distancia_km": 120
-        }
-      ]
+      "vizinhos": {
+        "Iranduba": {"distancia_km": 25, "tipo": "rodovia"},
+        "Careiro": {"distancia_km": 35, "tipo": "fluvial"},
+        "Novo Airão": {"distancia_km": 115, "tipo": "fluvial"},
+        "Presidente Figueiredo": {"distancia_km": 107, "tipo": "rodovia"},
+        "Careiro da Várzea": {"distancia_km": 25, "tipo": "fluvial"},
+        "Rio Preto da Eva": {"distancia_km": 80, "tipo": "rodovia"}
+      }
     },
-    {
-      "municipio": "Pauini",
-      "latitude": -7.713611,
-      "longitude": -66.976389,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Boca do Acre",
-          "distancia_km": 180
-        },
-        {
-          "municipio": "Lábrea",
-          "distancia_km": 220
-        }
-      ]
-    },
-    {
-      "municipio": "Presidente Figueiredo",
-      "latitude": -2.034722,
-      "longitude": -60.025,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Novo Airão",
-          "distancia_km": 120
-        },
-        {
-          "municipio": "Manaus",
-          "distancia_km": 107
-        }
-      ]
-    },
-    {
-      "municipio": "Rio Preto da Eva",
-      "latitude": -2.6975,
-      "longitude": -59.700833,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Manaus",
-          "distancia_km": 80
-        },
-        {
-          "municipio": "Itacoatiara",
-          "distancia_km": 120
-        }
-      ]
-    },
-    {
-      "municipio": "Santa Isabel do Rio Negro",
-      "latitude": -0.413889,
-      "longitude": -65.018889,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Barcelos",
-          "distancia_km": 320
-        },
-        {
-          "municipio": "Japurá",
-          "distancia_km": 350
-        }
-      ]
-    },
-    {
-      "municipio": "Santo Antônio do Içá",
-      "latitude": -3.102222,
-      "longitude": -67.939722,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Amaturá",
-          "distancia_km": 120
-        },
-        {
-          "municipio": "São Paulo de Olivença",
-          "distancia_km": 85
-        }
-      ]
-    },
-    {
-      "municipio": "São Gabriel da Cachoeira",
-      "latitude": -0.130556,
-      "longitude": -67.089167,
-      "possui_aeroporto": true,
+    "Manicoré": {
+      "coordenadas": {"lat": -5.8167, "lon": -61.3},
       "aeroporto": {
-        "nome": "Aeroporto de São Gabriel da Cachoeira",
-        "codigo_iata": "SJL"
+        "nome": "Aeroporto de Manicoré",
+        "iata": "MNX"
       },
-      "vizinhos": [
-        {
-          "municipio": "Santa Isabel do Rio Negro",
-          "distancia_km": 280
-        },
-        {
-          "municipio": "Barcelos",
-          "distancia_km": 350
-        }
-      ]
+      "vizinhos": {
+        "Humaitá": {"distancia_km": 220, "tipo": "fluvial"},
+        "Novo Aripuanã": {"distancia_km": 180, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "São Paulo de Olivença",
-      "latitude": -3.455833,
-      "longitude": -68.952778,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Amaturá",
-          "distancia_km": 85
-        },
-        {
-          "municipio": "Santo Antônio do Içá",
-          "distancia_km": 85
-        }
-      ]
+    "Maraã": {
+      "coordenadas": {"lat": -1.85, "lon": -65.5667},
+      "vizinhos": {
+        "Tefé": {"distancia_km": 160, "tipo": "fluvial"},
+        "Japurá": {"distancia_km": 200, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "São Sebastião do Uatumã",
-      "latitude": -2.566667,
-      "longitude": -57.866667,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Itapiranga",
-          "distancia_km": 90
-        },
-        {
-          "municipio": "Urucará",
-          "distancia_km": 110
-        }
-      ]
+    "Maués": {
+      "coordenadas": {"lat": -3.3833, "lon": -57.7167},
+      "aeroporto": {
+        "nome": "Aeroporto de Maués",
+        "iata": "MBZ"
+      },
+      "vizinhos": {
+        "Apuí": {"distancia_km": 200, "tipo": "fluvial"},
+        "Barreirinha": {"distancia_km": 120, "tipo": "fluvial"},
+        "Boa Vista do Ramos": {"distancia_km": 70, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Silves",
-      "latitude": -2.841944,
-      "longitude": -58.208056,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Itapiranga",
-          "distancia_km": 65
-        },
-        {
-          "municipio": "Itacoatiara",
-          "distancia_km": 85
-        }
-      ]
+    "Nhamundá": {
+      "coordenadas": {"lat": -2.1833, "lon": -56.7167},
+      "vizinhos": {
+        "Parintins": {"distancia_km": 120, "tipo": "fluvial"},
+        "Urucará": {"distancia_km": 100, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Tabatinga",
-      "latitude": -4.25,
-      "longitude": -69.933333,
-      "possui_aeroporto": true,
+    "Nova Olinda do Norte": {
+      "coordenadas": {"lat": -3.9001, "lon": -59.0946},
+      "vizinhos": {}
+    },
+    "Novo Airão": {
+      "coordenadas": {"lat": -2.6167, "lon": -60.95},
+      "aeroporto": {
+        "nome": "Aeroporto de Novo Airão",
+        "iata": "none"
+      },
+      "vizinhos": {
+        "Manaus": {"distancia_km": 115, "tipo": "fluvial"},
+        "Barcelos": {"distancia_km": 250, "tipo": "fluvial"},
+        "Iranduba": {"distancia_km": 90, "tipo": "fluvial"},
+        "Presidente Figueiredo": {"distancia_km": 120, "tipo": "rodovia"}
+      }
+    },
+    "Novo Aripuanã": {
+      "coordenadas": {"lat": -5.1333, "lon": -60.3833},
+      "aeroporto": {
+        "nome": "Aeroporto de Novo Aripuanã",
+        "iata": "NVP"
+      },
+      "vizinhos": {
+        "Manicoré": {"distancia_km": 180, "tipo": "fluvial"},
+        "Apuí": {"distancia_km": 200, "tipo": "rodovia"},
+        "Borba": {"distancia_km": 120, "tipo": "fluvial"}
+      }
+    },
+    "Parintins": {
+      "coordenadas": {"lat": -2.6283, "lon": -56.7358},
+      "aeroporto": {
+        "nome": "Júlio Belém",
+        "iata": "PIN"
+      },
+      "vizinhos": {
+        "Nhamundá": {"distancia_km": 120, "tipo": "fluvial"},
+        "Barreirinha": {"distancia_km": 80, "tipo": "fluvial"},
+        "Urucará": {"distancia_km": 150, "tipo": "fluvial"}
+      }
+    },
+    "Pauini": {
+      "coordenadas": {"lat": -7.7167, "lon": -66.9667},
+      "vizinhos": {
+        "Boca do Acre": {"distancia_km": 180, "tipo": "fluvial"},
+        "Lábrea": {"distancia_km": 200, "tipo": "fluvial"}
+      }
+    },
+    "Presidente Figueiredo": {
+      "coordenadas": {"lat": -2.05, "lon": -60.0167},
+      "aeroporto": {
+        "nome": "Aeroporto de Presidente Figueiredo",
+        "iata": "none"
+      },
+      "vizinhos": {
+        "Manaus": {"distancia_km": 107, "tipo": "rodovia"},
+        "Novo Airão": {"distancia_km": 120, "tipo": "rodovia"}
+      }
+    },
+    "Rio Preto da Eva": {
+      "coordenadas": {"lat": -2.7, "lon": -59.7},
+      "aeroporto": {
+        "nome": "Aeroporto de Rio Preto da Eva",
+        "iata": "none"
+      },
+      "vizinhos": {
+        "Manaus": {"distancia_km": 80, "tipo": "rodovia"},
+        "Itacoatiara": {"distancia_km": 90, "tipo": "rodovia"}
+      }
+    },
+    "Santa Isabel do Rio Negro": {
+      "coordenadas": {"lat": -0.4167, "lon": -65.0167},
+      "aeroporto": {
+        "nome": "Aeroporto de Santa Isabel",
+        "iata": "none"
+      },
+      "vizinhos": {
+        "Barcelos": {"distancia_km": 180, "tipo": "fluvial"},
+        "São Gabriel da Cachoeira": {"distancia_km": 220, "tipo": "fluvial"}
+      }
+    },
+    "Santo Antônio do Içá": {
+      "coordenadas": {"lat": -3.1, "lon": -67.9333},
+      "vizinhos": {
+        "Tabatinga": {"distancia_km": 150, "tipo": "fluvial"},
+        "Tonantins": {"distancia_km": 70, "tipo": "fluvial"},
+        "Amaturá": {"distancia_km": 90, "tipo": "fluvial"}
+      }
+    },
+    "Silves": {
+      "coordenadas": {"lat": -2.8333, "lon": -58.2},
+      "vizinhos": {
+        "Itapiranga": {"distancia_km": 50, "tipo": "fluvial"},
+        "Itacoatiara": {"distancia_km": 90, "tipo": "fluvial"},
+        "Urucurituba": {"distancia_km": 40, "tipo": "fluvial"}
+      }
+    },
+    "São Gabriel da Cachoeira": {
+      "coordenadas": {"lat": -0.1306, "lon": -67.0892},
+      "aeroporto": {
+        "nome": "Aeroporto de São Gabriel",
+        "iata": "SJL"
+      },
+      "vizinhos": {
+        "Santa Isabel do Rio Negro": {"distancia_km": 220, "tipo": "fluvial"},
+        "Japurá": {"distancia_km": 300, "tipo": "fluvial"}
+      }
+    },
+    "São Paulo de Olivença": {
+      "coordenadas": {"lat": -3.4669, "lon": -68.9508},
+      "vizinhos": {
+        "Tabatinga": {"distancia_km": 90, "tipo": "fluvial"},
+        "Amaturá": {"distancia_km": 60, "tipo": "fluvial"}
+      }
+    },
+    "São Sebastião do Uatumã": {
+      "coordenadas": {"lat": -2.5667, "lon": -57.8667},
+      "vizinhos": {
+        "Urucará": {"distancia_km": 90, "tipo": "fluvial"},
+        "Itapiranga": {"distancia_km": 70, "tipo": "fluvial"}
+      }
+    },
+    "Tabatinga": {
+      "coordenadas": {"lat": -4.2517, "lon": -69.9386},
       "aeroporto": {
         "nome": "Aeroporto Internacional de Tabatinga",
-        "codigo_iata": "TBT"
+        "iata": "TBT"
       },
-      "vizinhos": [
-        {
-          "municipio": "Benjamin Constant",
-          "distancia_km": 46
-        },
-        {
-          "municipio": "Atalaia do Norte",
-          "distancia_km": 88
-        }
-      ]
+      "vizinhos": {
+        "Benjamin Constant": {"distancia_km": 12, "tipo": "rodovia"},
+        "São Paulo de Olivença": {"distancia_km": 90, "tipo": "fluvial"},
+        "Santo Antônio do Içá": {"distancia_km": 150, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Tapauá",
-      "latitude": -5.620833,
-      "longitude": -63.183056,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Lábrea",
-          "distancia_km": 180
-        },
-        {
-          "municipio": "Canutama",
-          "distancia_km": 220
-        }
-      ]
+    "Tapauá": {
+      "coordenadas": {"lat": -5.6333, "lon": -63.1833},
+      "vizinhos": {
+        "Lábrea": {"distancia_km": 220, "tipo": "fluvial"},
+        "Coari": {"distancia_km": 250, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Tefé",
-      "latitude": -3.353889,
-      "longitude": -64.710833,
-      "possui_aeroporto": true,
+    "Tefé": {
+      "coordenadas": {"lat": -3.3686, "lon": -64.7208},
       "aeroporto": {
         "nome": "Aeroporto de Tefé",
-        "codigo_iata": "TFF"
+        "iata": "TFF"
       },
-      "vizinhos": [
-        {
-          "municipio": "Coari",
-          "distancia_km": 225
-        },
-        {
-          "municipio": "Carauari",
-          "distancia_km": 320
-        }
-      ]
+      "vizinhos": {
+        "Coari": {"distancia_km": 225, "tipo": "fluvial"},
+        "Alvarães": {"distancia_km": 40, "tipo": "fluvial"},
+        "Maraã": {"distancia_km": 160, "tipo": "fluvial"},
+        "Carauari": {"distancia_km": 320, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Tonantins",
-      "latitude": -2.873056,
-      "longitude": -67.802222,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Fonte Boa",
-          "distancia_km": 180
-        },
-        {
-          "municipio": "Jutaí",
-          "distancia_km": 250
-        }
-      ]
+    "Tonantins": {
+      "coordenadas": {"lat": -2.8667, "lon": -67.8},
+      "vizinhos": {
+        "Santo Antônio do Içá": {"distancia_km": 70, "tipo": "fluvial"},
+        "Fonte Boa": {"distancia_km": 180, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Uarini",
-      "latitude": -2.985,
-      "longitude": -65.108333,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Tefé",
-          "distancia_km": 120
-        },
-        {
-          "municipio": "Maraã",
-          "distancia_km": 180
-        }
-      ]
+    "Uarini": {
+      "coordenadas": {"lat": -2.9964, "lon": -65.1136},
+      "vizinhos": {}
     },
-    {
-      "municipio": "Urucará",
-      "latitude": -2.536111,
-      "longitude": -57.758333,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Nhamundá",
-          "distancia_km": 85
-        },
-        {
-          "municipio": "São Sebastião do Uatumã",
-          "distancia_km": 110
-        }
-      ]
+    "Urucará": {
+      "coordenadas": {"lat": -2.5333, "lon": -57.7667},
+      "vizinhos": {
+        "Nhamundá": {"distancia_km": 100, "tipo": "fluvial"},
+        "São Sebastião do Uatumã": {"distancia_km": 90, "tipo": "fluvial"},
+        "Parintins": {"distancia_km": 150, "tipo": "fluvial"}
+      }
     },
-    {
-      "municipio": "Urucurituba",
-      "latitude": -3.128611,
-      "longitude": -58.158056,
-      "possui_aeroporto": false,
-      "vizinhos": [
-        {
-          "municipio": "Itacoatiara",
-          "distancia_km": 45
-        },
-        {
-          "municipio": "Silves",
-          "distancia_km": 70
-        }
-      ]
+    "Urucurituba": {
+      "coordenadas": {"lat": -3.1333, "lon": -58.2167},
+      "vizinhos": {
+        "Itacoatiara": {"distancia_km": 60, "tipo": "fluvial"},
+        "Silves": {"distancia_km": 40, "tipo": "fluvial"}
+      }
     }
-  ]
+  }
+}
