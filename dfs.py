@@ -1,6 +1,6 @@
 from collections import deque
 import json
-import time  
+import time
 
 def database():
     with open('database.json', 'r', encoding='utf-8') as f:
@@ -8,12 +8,12 @@ def database():
 
 def bfs(data, cidade_inicial):
     if cidade_inicial not in data['municipios']:
-        return None
+        return {'erro': 'Cidade não encontrada', 'tempo_ms': 0}  # Modificado para retornar um dicionário
     
-    inicio = time.time()  # Marca o início da execução
+    inicio = time.time()
     
     fila = deque()
-    fila.append((cidade_inicial, [], 0))  # (cidade_atual, caminho, distancia_total)
+    fila.append((cidade_inicial, [], 0))
     visitados = set()
 
     while fila:
@@ -23,24 +23,22 @@ def bfs(data, cidade_inicial):
             continue
         visitados.add(cidade)
 
-        # Verifica se a cidade atual tem aeroporto
         if 'aeroporto' in data['municipios'][cidade]:
-            tempo_execucao = (time.time() - inicio) * 1000  # Calcula o tempo em milissegundos
+            tempo_execucao = (time.time() - inicio) * 1000
             return {
                 'caminho': caminho + [cidade],
                 'distancia_total': distancia_total,
                 'aeroporto': data['municipios'][cidade]['aeroporto']['nome'],
                 'iata': data['municipios'][cidade]['aeroporto'].get('iata', 'N/A'),
-                'tempo_ms': tempo_execucao  # Adiciona o tempo ao resultado
+                'tempo_ms': tempo_execucao
             }
         
-        # Explora os vizinhos
         for vizinho, dados in data['municipios'][cidade].get('vizinhos', {}).items():
             nova_distancia = distancia_total + dados['distancia_km']
             fila.append((vizinho, caminho + [cidade], nova_distancia))
     
     tempo_execucao = (time.time() - inicio) * 1000
-    return {'tempo_ms': tempo_execucao}  # Retorna o tempo mesmo se não encontrar
+    return {'erro': 'Nenhum aeroporto alcançável', 'tempo_ms': tempo_execucao}
 
 def main():
     data = database()
@@ -54,10 +52,9 @@ def main():
         cidade = input("\nDigite o nome da cidade de origem (exatamente como no banco de dados): ").strip()  
         resultado = bfs(data, cidade)
         
-        if not resultado or 'caminho' not in resultado:
-            print(f"\nErro: Cidade '{cidade}' não encontrada ou não conectada a um aeroporto.")
-            if 'tempo_ms' in resultado:
-                print(f"Tempo de busca: {resultado['tempo_ms']:.4f} ms")
+        if 'erro' in resultado:  # Modificado para verificar 'erro' no dicionário
+            print(f"\nErro: {resultado['erro']}")
+            print(f"Tempo de busca: {resultado['tempo_ms']:.4f} ms")
             continue
             
         print("\n" + "="*50)
@@ -66,7 +63,7 @@ def main():
         print(f"• Aeroporto mais próximo: {resultado['aeroporto']} (Código IATA: {resultado['iata']})")
         print(f"• Caminho completo: {' → '.join(resultado['caminho'])}")
         print(f"• Distância total: {resultado['distancia_total']} km")
-        print(f"• Tempo de busca: {resultado['tempo_ms']:.4f} ms")  # Mostra o tempo formatado
+        print(f"• Tempo de busca: {resultado['tempo_ms']:.4f} ms")
         print("="*50)
 
         continuar = input("\nDeseja consultar outra cidade? (s/n): ").lower()
