@@ -32,10 +32,6 @@
     },
     "Apuí": {
       "coordenadas": {"lat": -7.2, "lon": -59.9},
-      "aeroporto": {
-        "nome": "Aeroporto de Apuí",
-        "iata": "SWYN"
-      },
       "vizinhos": {
         "Novo Aripuanã": {"distancia_km": 200, "tipo": "rodovia"},
         "Borba": {"distancia_km": 150, "tipo": "fluvial"},
@@ -58,10 +54,6 @@
     },
     "Barcelos": {
       "coordenadas": {"lat": -0.9667, "lon": -62.9167},
-      "aeroporto": {
-        "nome": "Aeroporto de Barcelos",
-        "iata": "BAZ"
-      },
       "vizinhos": {
         "Novo Airão": {"distancia_km": 250, "tipo": "fluvial"},
         "Santa Isabel do Rio Negro": {"distancia_km": 180, "tipo": "fluvial"}
@@ -69,10 +61,6 @@
     },
     "Barreirinha": {
       "coordenadas": {"lat": -2.8, "lon": -57.0667},
-      "aeroporto": {
-        "nome": "Aeroporto de Barreirinha",
-        "iata": "SWBI"
-      },
       "vizinhos": {
         "Maués": {"distancia_km": 120, "tipo": "fluvial"},
         "Parintins": {"distancia_km": 80, "tipo": "fluvial"},
@@ -81,10 +69,6 @@
     },
     "Benjamin Constant": {
       "coordenadas": {"lat": -4.3831, "lon": -70.0319},
-      "aeroporto": {
-        "nome": "Aeroporto de Benjamin Constant",
-        "iata": "none"
-      },
       "vizinhos": {
         "Tabatinga": {"distancia_km": 12, "tipo": "rodovia"},
         "Atalaia do Norte": {"distancia_km": 80, "tipo": "fluvial"}
@@ -106,10 +90,6 @@
     },
     "Boca do Acre": {
       "coordenadas": {"lat": -8.75, "lon": -67.3833},
-      "aeroporto": {
-        "nome": "Aeroporto de Boca do Acre",
-        "iata": "BCR"
-      },
       "vizinhos": {
         "Lábrea": {"distancia_km": 320, "tipo": "rodovia"},
         "Pauini": {"distancia_km": 180, "tipo": "fluvial"}
@@ -117,10 +97,6 @@
     },
     "Borba": {
       "coordenadas": {"lat": -4.3833, "lon": -59.5833},
-      "aeroporto": {
-        "nome": "Aeroporto de Borba",
-        "iata": "RBB"
-      },
       "vizinhos": {
         "Apuí": {"distancia_km": 150, "tipo": "fluvial"},
         "Novo Aripuanã": {"distancia_km": 120, "tipo": "fluvial"}
@@ -142,10 +118,6 @@
     },
     "Carauari": {
       "coordenadas": {"lat": -4.8833, "lon": -66.9},
-      "aeroporto": {
-        "nome": "Aeroporto de Carauari",
-        "iata": "CAF"
-      },
       "vizinhos": {
         "Jutaí": {"distancia_km": 280, "tipo": "fluvial"},
         "Tefé": {"distancia_km": 320, "tipo": "fluvial"},
@@ -183,10 +155,6 @@
     },
     "Codajás": {
       "coordenadas": {"lat": -3.8333, "lon": -62.05},
-      "aeroporto": {
-        "nome": "Aeroporto de Codajás",
-        "iata": "none"
-      },
       "vizinhos": {
         "Coari": {"distancia_km": 180, "tipo": "fluvial"},
         "Anori": {"distancia_km": 90, "tipo": "fluvial"}
@@ -213,10 +181,6 @@
     },
     "Fonte Boa": {
       "coordenadas": {"lat": -2.5167, "lon": -66.1},
-      "aeroporto": {
-        "nome": "Aeroporto de Fonte Boa",
-        "iata": "none"
-      },
       "vizinhos": {
         "Tonantins": {"distancia_km": 180, "tipo": "fluvial"},
         "Jutaí": {"distancia_km": 220, "tipo": "fluvial"}
@@ -231,10 +195,6 @@
     },
     "Humaitá": {
       "coordenadas": {"lat": -7.5, "lon": -63.0333},
-      "aeroporto": {
-        "nome": "Aeroporto de Humaitá",
-        "iata": "HUW"
-      },
       "vizinhos": {
         "Manicoré": {"distancia_km": 220, "tipo": "fluvial"},
         "Canutama": {"distancia_km": 150, "tipo": "rodovia"}
@@ -257,10 +217,6 @@
     },
     "Itacoatiara": {
       "coordenadas": {"lat": -3.1386, "lon": -58.4442},
-      "aeroporto": {
-        "nome": "Aeroporto de Itacoatiara",
-        "iata": "ITA"
-      },
       "vizinhos": {
         "Silves": {"distancia_km": 90, "tipo": "fluvial"},
         "Autazes": {"distancia_km": 110, "tipo": "rodovia"},
@@ -284,10 +240,6 @@
     },
     "Japurá": {
       "coordenadas": {"lat": -1.8333, "lon": -66.9833},
-      "aeroporto": {
-        "nome": "Aeroporto Bittencourt",
-        "iata": "SWJP"
-      },
       "vizinhos": {
         "Maraã": {"distancia_km": 200, "tipo": "fluvial"},
         "São Gabriel da Cachoeira": {"distancia_km": 300, "tipo": "fluvial"}
@@ -324,10 +276,6 @@
     },
     "Manacapuru": {
       "coordenadas": {"lat": -3.2996, "lon": -60.6207},
-      "aeroporto": {
-        "nome": "Aeroporto de Manacapuru",
-        "iata": "none"
-      },
       "vizinhos": {
         "Iranduba": {"distancia_km": 70, "tipo": "rodovia"},
         "Anamã": {"distancia_km": 85, "tipo": "fluvial"},
@@ -356,10 +304,6 @@
     },
     "Manicoré": {
       "coordenadas": {"lat": -5.8167, "lon": -61.3},
-      "aeroporto": {
-        "nome": "Aeroporto de Manicoré",
-        "iata": "MNX"
-      },
       "vizinhos": {
         "Humaitá": {"distancia_km": 220, "tipo": "fluvial"},
         "Novo Aripuanã": {"distancia_km": 180, "tipo": "fluvial"}
@@ -393,18 +337,10 @@
     },
     "Nova Olinda do Norte": {
       "coordenadas": {"lat": -3.9001, "lon": -59.0946},
-      "aeroporto": {
-        "nome": "Aeroporto de Nova Olinda do Norte",
-        "iata": "SWNO"
-      },
       "vizinhos": {}
     },
     "Novo Airão": {
       "coordenadas": {"lat": -2.6167, "lon": -60.95},
-      "aeroporto": {
-        "nome": "Aeroporto de Novo Airão",
-        "iata": "none"
-      },
       "vizinhos": {
         "Manaus": {"distancia_km": 115, "tipo": "fluvial"},
         "Barcelos": {"distancia_km": 250, "tipo": "fluvial"},
@@ -414,10 +350,6 @@
     },
     "Novo Aripuanã": {
       "coordenadas": {"lat": -5.1333, "lon": -60.3833},
-      "aeroporto": {
-        "nome": "Aeroporto de Novo Aripuanã",
-        "iata": "NVP"
-      },
       "vizinhos": {
         "Manicoré": {"distancia_km": 180, "tipo": "fluvial"},
         "Apuí": {"distancia_km": 200, "tipo": "rodovia"},
@@ -427,7 +359,7 @@
     "Parintins": {
       "coordenadas": {"lat": -2.6283, "lon": -56.7358},
       "aeroporto": {
-        "nome": "Júlio Belém",
+        "nome": "Aeroporto Regional de Parintins",
         "iata": "PIN"
       },
       "vizinhos": {
@@ -438,10 +370,6 @@
     },
     "Pauini": {
       "coordenadas": {"lat": -7.7167, "lon": -66.9667},
-      "aeroporto": {
-        "nome": "Aeroporto de Pauini",
-        "iata": "SWUI"
-      },
       "vizinhos": {
         "Boca do Acre": {"distancia_km": 180, "tipo": "fluvial"},
         "Lábrea": {"distancia_km": 200, "tipo": "fluvial"}
@@ -449,10 +377,6 @@
     },
     "Presidente Figueiredo": {
       "coordenadas": {"lat": -2.05, "lon": -60.0167},
-      "aeroporto": {
-        "nome": "Aeroporto de Presidente Figueiredo",
-        "iata": "none"
-      },
       "vizinhos": {
         "Manaus": {"distancia_km": 107, "tipo": "rodovia"},
         "Novo Airão": {"distancia_km": 120, "tipo": "rodovia"}
@@ -460,10 +384,6 @@
     },
     "Rio Preto da Eva": {
       "coordenadas": {"lat": -2.7, "lon": -59.7},
-      "aeroporto": {
-        "nome": "Aeroporto de Rio Preto da Eva",
-        "iata": "none"
-      },
       "vizinhos": {
         "Manaus": {"distancia_km": 80, "tipo": "rodovia"},
         "Itacoatiara": {"distancia_km": 90, "tipo": "rodovia"}
@@ -471,10 +391,6 @@
     },
     "Santa Isabel do Rio Negro": {
       "coordenadas": {"lat": -0.4167, "lon": -65.0167},
-      "aeroporto": {
-        "nome": "Aeroporto de Santa Isabel",
-        "iata": "IRZ"
-      },
       "vizinhos": {
         "Barcelos": {"distancia_km": 180, "tipo": "fluvial"},
         "São Gabriel da Cachoeira": {"distancia_km": 220, "tipo": "fluvial"}
@@ -482,10 +398,6 @@
     },
     "Santo Antônio do Içá": {
       "coordenadas": {"lat": -3.1, "lon": -67.9333},
-      "aeroporto": {
-        "nome": "Aeroporto Ipiranga",
-        "iata": "IPG"
-      },
       "vizinhos": {
         "Tabatinga": {"distancia_km": 150, "tipo": "fluvial"},
         "Tonantins": {"distancia_km": 70, "tipo": "fluvial"},
@@ -503,7 +415,7 @@
     "São Gabriel da Cachoeira": {
       "coordenadas": {"lat": -0.1306, "lon": -67.0892},
       "aeroporto": {
-        "nome": "Aeroporto de São Gabriel",
+        "nome": "Aeroporto Regional de Uaupés",
         "iata": "SJL"
       },
       "vizinhos": {
@@ -514,7 +426,7 @@
     "São Paulo de Olivença": {
       "coordenadas": {"lat": -3.4669, "lon": -68.9508},
       "aeroporto": {
-        "nome": "Aeroporto Senadora Eunice Michiles",
+        "nome": "Aeroporto de São Paulo de Olivença",
         "iata": "OLC"
       },
       "vizinhos": {
@@ -574,10 +486,6 @@
     },
     "Urucará": {
       "coordenadas": {"lat": -2.5333, "lon": -57.7667},
-      "aeroporto": {
-        "nome": "Aeroporto de Urucará",
-        "iata": "SWKK"
-      },
       "vizinhos": {
         "Nhamundá": {"distancia_km": 100, "tipo": "fluvial"},
         "São Sebastião do Uatumã": {"distancia_km": 90, "tipo": "fluvial"},
