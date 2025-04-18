@@ -3,7 +3,7 @@ import json
 import time
 
 def database():
-    with open('database_atualizado.json', 'r', encoding='utf-8') as f:
+    with open('database.json', 'r', encoding='utf-8') as f:
         return json.load(f)
 
 def bfs(data, cidade_inicial, comercial):
@@ -24,7 +24,7 @@ def bfs(data, cidade_inicial, comercial):
         visitados.add(cidade)
 
         if comercial == 's':
-            if 'aeroporto' in data['municipios'][cidade] and  data['municipios'][cidade]['aeroporto'].get('comercial', True):
+            if 'aeroporto' in data['municipios'][cidade] and data['municipios'][cidade]['aeroporto'].get('comercial', True):
                 aeroporto = True
             else:
                 aeroporto = False

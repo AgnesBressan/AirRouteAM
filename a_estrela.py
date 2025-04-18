@@ -4,7 +4,7 @@ import time
 import math
 
 def database():
-    with open('database_atualizado.json', 'r', encoding='utf-8') as f:
+    with open('database.json', 'r', encoding='utf-8') as f:
         return json.load(f)
 
 def calcular_distancia(coord1, coord2):
