@@ -1,7 +1,7 @@
 {
   "municipios": {
     "Alvarães": {
-      "coordenadas": {"lat": 0.0, "lon": 0.0},
+      "coordenadas": {"lat": -3.22083, "lon": -64.80417},
       "vizinhos": {
         "Tefé": {"distancia_km": 40, "tipo": "fluvial"}
       }
