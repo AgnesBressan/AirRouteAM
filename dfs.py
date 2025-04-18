@@ -3,10 +3,10 @@ import json
 import time
 
 def database():
-    with open('database.json', 'r', encoding='utf-8') as f:
+    with open('database_atualizado.json', 'r', encoding='utf-8') as f:
         return json.load(f)
 
-def bfs(data, cidade_inicial):
+def bfs(data, cidade_inicial, comercial):
     if cidade_inicial not in data['municipios']:
         return {'erro': 'Cidade não encontrada', 'tempo_ms': 0}  # Modificado para retornar um dicionário
     
@@ -23,7 +23,18 @@ def bfs(data, cidade_inicial):
             continue
         visitados.add(cidade)
 
-        if 'aeroporto' in data['municipios'][cidade]:
+        if comercial == 's':
+            if 'aeroporto' in data['municipios'][cidade] and  data['municipios'][cidade]['aeroporto'].get('comercial', True):
+                aeroporto = True
+            else:
+                aeroporto = False
+        else:
+            if 'aeroporto' in data['municipios'][cidade]:
+                aeroporto = True
+            else:
+                aeroporto = False
+
+        if aeroporto:
             tempo_execucao = (time.time() - inicio) * 1000
             return {
                 'caminho': caminho + [cidade],
@@ -49,8 +60,12 @@ def main():
     print("---------------------------------------------")
     
     while True:
+        comercial = input("\nDeseja consultar apenas aeroportos comerciais? (s/n): ").lower()
+        while comercial not in ('s', 'n'):
+            comercial = input("Digite apenas 's' ou 'n': ").lower()
+        
         cidade = input("\nDigite o nome da cidade de origem (exatamente como no banco de dados): ").strip()  
-        resultado = bfs(data, cidade)
+        resultado = bfs(data, cidade, comercial)
         
         if 'erro' in resultado:  # Modificado para verificar 'erro' no dicionário
             print(f"\nErro: {resultado['erro']}")
