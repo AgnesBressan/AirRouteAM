@@ -257,7 +257,7 @@
       "aeroporto": {
         "nome": "Aeroporto de Borba",
         "iata": "RBB",
-        "comercial": false
+        "comercial": true
       },
       "vizinhos": {
         "Apuí": {
@@ -747,7 +747,7 @@
       "aeroporto": {
         "nome": "Eduardo Gomes",
         "iata": "MAO",
-        "comercial": false
+        "comercial": true
       },
       "vizinhos": {
         "Iranduba": {
@@ -1181,7 +1181,7 @@
       "aeroporto": {
         "nome": "Aeroporto de Tefé",
         "iata": "TFF",
-        "comercial": false
+        "comercial": true
       },
       "vizinhos": {
         "Coari": {

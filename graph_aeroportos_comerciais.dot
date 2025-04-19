@@ -16,7 +16,7 @@ graph G {
   "Beruri" [label="Beruri", fillcolor=white];
   "Boa_Vista_do_Ramos" [label="Boa Vista do Ramos", fillcolor=white];
   "Boca_do_Acre" [label="Boca do Acre", fillcolor=white];
-  "Borba" [label="Borba", fillcolor=white];
+  "Borba" [label="Borba", fillcolor=orange];
   "Caapiranga" [label="Caapiranga", fillcolor=white];
   "Canutama" [label="Canutama", fillcolor=white];
   "Carauari" [label="Carauari", fillcolor=white];
@@ -40,7 +40,7 @@ graph G {
   "Lábrea" [label="Lábrea", fillcolor=orange];
   "Manacapuru" [label="Manacapuru", fillcolor=white];
   "Manaquiri" [label="Manaquiri", fillcolor=white];
-  "Manaus" [label="Manaus", fillcolor=white];
+  "Manaus" [label="Manaus", fillcolor=orange];
   "Manicoré" [label="Manicoré", fillcolor=orange];
   "Maraã" [label="Maraã", fillcolor=white];
   "Maués" [label="Maués", fillcolor=white];
@@ -60,7 +60,7 @@ graph G {
   "São_Sebastião_do_Uatumã" [label="São Sebastião do Uatumã", fillcolor=white];
   "Tabatinga" [label="Tabatinga", fillcolor=orange];
   "Tapauá" [label="Tapauá", fillcolor=white];
-  "Tefé" [label="Tefé", fillcolor=white];
+  "Tefé" [label="Tefé", fillcolor=orange];
   "Tonantins" [label="Tonantins", fillcolor=white];
   "Uarini" [label="Uarini", fillcolor=white];
   "Urucará" [label="Urucará", fillcolor=white];
