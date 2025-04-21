@@ -58,7 +58,7 @@ def a_estrela(data, cidade_inicial, comercial):
             for a in aeroportos
         )
 
-    # fila de prioridade com (f(n), g(n), cidade atual, caminho até agora, distância total)
+    # fila de prioridade com (f(n), nro de saltos, cidade atual, caminho até agora, g(n))
     fila = []
     heapq.heappush(fila, (funcao_avaliacao(cidade_inicial), 0, cidade_inicial, [], 0))
     visitado = set()
