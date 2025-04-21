@@ -3,12 +3,13 @@ import heapq
 import time
 import math
 
+# carregando a base de dados database.json
 def database():
     with open('database.json', 'r', encoding='utf-8') as f:
         return json.load(f)
 
+# cálculo da distância em linha reta entre duas coordenadas (lat, lon) usando a fórmula de Haversine.
 def calcular_distancia(coord1, coord2):
-    """Distância em linha reta entre duas coordenadas (lat, lon) usando a fórmula de Haversine."""
     R = 6371  # raio médio da Terra em km
     lat1, lon1 = coord1
     lat2, lon2 = coord2
@@ -23,11 +24,14 @@ def calcular_distancia(coord1, coord2):
     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
     return R * c
 
+# construção do grafo de cidades vizinhas e do conjunto de cidades com aeroportos
 def construir_grafo(data, comercial):
     grafo = {}
     aeroportos = set()
     for cidade, info in data['municipios'].items():
         grafo[cidade] = list(info.get('vizinhos', {}).keys())
+
+        # filtra se a busca será feita apenas em aeroportos comerciais ou não
         if comercial == 's':
             if 'aeroporto' in info and info['aeroporto'].get('comercial', True):
                 aeroportos.add(cidade)
@@ -36,6 +40,7 @@ def construir_grafo(data, comercial):
                 aeroportos.add(cidade)
     return grafo, aeroportos
 
+# algoritmo A* para encontrar o caminho mais curto até um aeroporto
 def a_estrela(data, cidade_inicial, comercial):
     if cidade_inicial not in data['municipios']:
         return {'erro': 'Cidade não encontrada', 'tempo_ms': 0}
@@ -43,8 +48,8 @@ def a_estrela(data, cidade_inicial, comercial):
     inicio = time.time()
     grafo, aeroportos = construir_grafo(data, comercial)
 
-    def heuristica(n):
-        """Distância em linha reta até o aeroporto mais próximo"""
+    # retorna a menor distância em linha reta até um aeroporto
+    def funcao_avaliacao(n):
         coord_n = data['municipios'][n]['coordenadas']
         return min(
             calcular_distancia((coord_n['lat'], coord_n['lon']),
@@ -53,13 +58,16 @@ def a_estrela(data, cidade_inicial, comercial):
             for a in aeroportos
         )
 
+    # fila de prioridade com (f(n), g(n), cidade atual, caminho até agora, distância total)
     fila = []
-    heapq.heappush(fila, (heuristica(cidade_inicial), 0, cidade_inicial, [], 0))
+    heapq.heappush(fila, (funcao_avaliacao(cidade_inicial), 0, cidade_inicial, [], 0))
     visitado = set()
 
     while fila:
+        # retorna sempre o elemento com menor valor de f(n)
         f, g, atual, caminho, distancia_total = heapq.heappop(fila)
 
+        # verifica se a cidade atual tem aeroporto
         if atual in aeroportos:
             tempo_execucao = (time.time() - inicio) * 1000
             aeroporto_info = data['municipios'][atual]['aeroporto']
@@ -75,11 +83,12 @@ def a_estrela(data, cidade_inicial, comercial):
             continue
         visitado.add(atual)
 
+        # explora todos os vizinhos do nó atual
         for vizinho, dados in data['municipios'][atual].get('vizinhos', {}).items():
-            nova_distancia = distancia_total + dados['distancia_km']
+            nova_distancia = distancia_total + dados['distancia_km']    # custo real g(n)
             novo_caminho = caminho + [atual]
-            novo_g = g + 1
-            novo_f = nova_distancia + heuristica(vizinho)
+            novo_g = g + 1  # número de saltos (não usado na heurística aqui)
+            novo_f = nova_distancia + funcao_avaliacao(vizinho) # f(n) = g(n) + h(n)
             heapq.heappush(fila, (novo_f, novo_g, vizinho, novo_caminho, nova_distancia))
 
     tempo_execucao = (time.time() - inicio) * 1000
